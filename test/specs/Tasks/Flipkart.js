@@ -22,19 +22,19 @@ describe("flipkart", () =>
         let phonePrices = await browser.$$("//div[@class='_30jeq3 _1_WHN1']");
         console.log(phonePrices.length);
 
-        for(let i=0; i<phonePrices.length; i++)
-        {
-            let ph = phoneNames[i];
-            let phone = await ph.getText();
+        // for(let i=0; i<phonePrices.length; i++)
+        // {
+        //     let ph = phoneNames[i];
+        //     let phone = await ph.getText();
 
-            let pr = phonePrices[i];
-            let price = await pr.getText();
+        //     let pr = phonePrices[i];
+        //     let price = await pr.getText();
             
-            console.log(`Phone name is ===> ${phone} and the price is ===> ${price}`);
+        //     console.log(`Phone name is ===> ${phone} and the price is ===> ${price}`);
             
-            sh.getRow(i+1).getCell(1).value=`Phone name is ===> ${phone} and the price is ===> ${price}`;
-            await wb.xlsx.writeFile(excelpath);
-        }
+        //     sh.getRow(i+1).getCell(1).value=`Phone name is ===> ${phone} and the price is ===> ${price}`;
+        //     await wb.xlsx.writeFile(excelpath);
+        // }
         await browser.pause(5000);
     })
 })

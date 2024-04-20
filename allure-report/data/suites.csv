@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Apr 20 18:36:29 IST 2024","Sat Apr 20 18:37:11 IST 2024","41227","","fetchSingleDataFromJSON","","","","loginAction",""
+"passed","Sat Apr 20 18:37:13 IST 2024","Sat Apr 20 18:37:38 IST 2024","24753","","fetchSingleDataFromJSON","","","","loginAction",""
+"passed","Sat Apr 20 18:37:11 IST 2024","Sat Apr 20 18:37:21 IST 2024","10508","","fetchMultipleDataFromJSON","","","","LoginAction",""
+"passed","Sat Apr 20 18:36:51 IST 2024","Sat Apr 20 18:37:00 IST 2024","9016","","fetchMultipleDataFromJSON","","","","LoginAction",""
+"passed","Sat Apr 20 18:36:21 IST 2024","Sat Apr 20 18:36:53 IST 2024","31223","","fetchSingleDataFromJSON","","","","loginAction",""
+"passed","Sat Apr 20 18:37:34 IST 2024","Sat Apr 20 18:37:44 IST 2024","10607","","fetchMultipleDataFromJSON","","","","LoginAction",""
