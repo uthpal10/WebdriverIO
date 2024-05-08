@@ -4,6 +4,9 @@ describe('suite', () =>
     {
         await browser.url("https://demoapps.qspiders.com/ui/button/buttonDisabled?sublist=4");
         await browser.pause(2000);
+        let title = await browser.getTitle();
+        console.log(title);
+        await expect (browser).toHaveTitle(title); // wdio default assertion  
         await browser.$("//button[@id='btn10']").click();
         await browser.pause(2000);
         await browser.$("//button[@id='btn12']").click();

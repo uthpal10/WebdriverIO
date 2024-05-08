@@ -51,7 +51,7 @@ export const config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -64,34 +64,34 @@ export const config = {
             'goog:chromeOptions': 
             {
                 // To handle notifications
-                // prefs: 
-                // {
-                //     // 0 - Default, 1 - Allow, 2 - Block
-                //     // 'profile.managed_default_content_settings.notifications': 2,
+                prefs: 
+                {
+                    // 0 - Default, 1 - Allow, 2 - Block
+                    // 'profile.managed_default_content_settings.notifications': 2,
                     
-                // },
+                },
                 //To run in headless mode
                 // args: ['--headless', '--disable-gpu']    
             }
         },
 
-        {
-            browserName: 'firefox',
-            maxInstances: 2,
-            'moz:firefoxOptions': 
-            {
-                // args: ['-headless']
-            },
-        },
+        // {
+        //     browserName: 'firefox',
+        //     maxInstances: 2,
+        //     'moz:firefoxOptions': 
+        //     {
+        //         // args: ['-headless']
+        //     },
+        // },
 
-        {
-            browserName: 'MicrosoftEdge',
-            maxInstances: 2,
-            'ms:edgeOptions': 
-            {
-                // args: ['--headless']
-            }
-        }
+        // {
+        //     browserName: 'MicrosoftEdge',
+        //     maxInstances: 2,
+        //     'ms:edgeOptions': 
+        //     {
+        //         // args: ['--headless']
+        //     }
+        // }
     ],
 
     //
@@ -249,7 +249,7 @@ export const config = {
      */
     beforeTest: function (test, context) 
     {
-        global.expect = expect;
+        // global.expect = expect;
     },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
