@@ -1,4 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Tue May 07 12:00:58 IST 2024","Tue May 07 12:01:06 IST 2024","7646","","suite","","","","title",""
-"broken","Tue May 07 12:00:28 IST 2024","Tue May 07 12:00:43 IST 2024","15214","","suite","","","","title",""
-"passed","Tue May 07 12:05:55 IST 2024","Tue May 07 12:06:17 IST 2024","22540","","suite","","","","title",""
+"passed","Fri May 31 18:16:44 IST 2024","Fri May 31 18:17:22 IST 2024","38734","","suite","","","","title",""

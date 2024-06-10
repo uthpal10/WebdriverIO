@@ -1,12 +1,15 @@
+import { expect } from "chai";
+
 describe('suite', () =>
 {
     it('title', async() =>
     {
         await browser.url("https://demoapps.qspiders.com/ui/button/buttonDisabled?sublist=4");
         await browser.pause(2000);
-        let title = await browser.getTitle();
+        let title = await browser.getTitle();                     // wdio default assertion 
         console.log(title);
-        await expect (browser).toHaveTitle(title); // wdio default assertion  
+        expect(title).to.equal("DemoApps | Qspiders | Buttons");     // chai assertion  
+        await browser.pause(2000);
         await browser.$("//button[@id='btn10']").click();
         await browser.pause(2000);
         await browser.$("//button[@id='btn12']").click();

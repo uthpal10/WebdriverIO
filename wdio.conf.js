@@ -1,4 +1,4 @@
-import { expect } from "chai"
+import { expect } from "chai";
 import allure from "allure-commandline";
 
 export const config = {
@@ -60,14 +60,14 @@ export const config = {
     capabilities: 
     [   {
             browserName: 'chrome',   // or 'chromium'
-            maxInstances: 2,
+            // maxInstances: 2,
             'goog:chromeOptions': 
             {
                 // To handle notifications
                 prefs: 
                 {
                     // 0 - Default, 1 - Allow, 2 - Block
-                    // 'profile.managed_default_content_settings.notifications': 2,
+                    'profile.managed_default_content_settings.notifications': 2
                     
                 },
                 //To run in headless mode
@@ -249,7 +249,7 @@ export const config = {
      */
     beforeTest: function (test, context) 
     {
-        // global.expect = expect;
+        global.expect = expect;
     },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
